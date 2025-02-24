@@ -1,0 +1,18 @@
+# 设置最低版本要求
+cmake_minimum_required(VERSION 3.10)
+
+
+# 设置项目名称
+project(My_Soft)
+
+
+# 设置 C++ 标准版本
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# 添加头文件
+include_directories(${project_SOURCE_DIR}/include)
+
+
+# 添加源文件
+add_executable(My_Soft src/main.cpp)
